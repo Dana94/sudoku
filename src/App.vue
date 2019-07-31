@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <grid></grid>
+    <board></board>
   </div>
 </template>
 
 <script>
-import Grid from './components/Grid.vue';
+import Board from './components/Board.vue';
 
 export default {
   name: 'app',
@@ -15,7 +15,7 @@ export default {
     }
   },
   components: {
-    Grid
+    Board
   }
 }
 </script>

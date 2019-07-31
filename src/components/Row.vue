@@ -1,18 +1,13 @@
 <template>
-
+  
 </template>
 
 <script>
-import Row from './Row.vue';
-
 export default {
-  components: {
-    Row
-  }
+
 }
 </script>
 
 <style>
 
 </style>
-
