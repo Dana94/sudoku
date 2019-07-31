@@ -1,31 +1,26 @@
 <template>
-  <div id="grid">
-    <div></div>
-    <div></div>
-    <div></div>
+  <div id="board">
 
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <div></div>
-    <div></div>
-    <div></div>
   </div>
 </template>
 
 <script>
+import Grid from './Grid.vue';
+
 export default {
   data () {
     return {
 
     }
+  },
+  components: {
+    Grid
   }
 }
 </script>
 
 <style lang="scss" scoped>
-#grid {
+#board {
   display: grid;
   grid-template: 200px 200px 200px / 200px 200px 200px;
   & > div {
