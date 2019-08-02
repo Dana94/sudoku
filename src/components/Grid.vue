@@ -1,6 +1,6 @@
 <template>
   <div id="board">
-    <row v-for="(row, x) in board" :key="x"></row>
+    <row v-for="(row, x) in board" :key="x" :row="row"></row>
   </div>
 </template>
 
