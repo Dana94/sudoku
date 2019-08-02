@@ -5,8 +5,8 @@ const state = {
 }
 
 const mutations = {
-  'SET_BOARD'(state,board) {
-
+  'SET_BOARD'(state, board) {
+    state.board = board;
   }
 }
 

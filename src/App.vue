@@ -16,6 +16,9 @@ export default {
   },
   components: {
     Board
+  },
+  created() {
+    this.$store.dispatch('initBoard');
   }
 }
 </script>

@@ -1,7 +1,5 @@
 <template>
-  <div id="board">
-
-  </div>
+    <grid></grid>
 </template>
 
 <script>
@@ -20,11 +18,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#board {
-  display: grid;
-  grid-template: 200px 200px 200px / 200px 200px 200px;
-  & > div {
-    border: 5px solid;
-  }
-}
+
 </style>
