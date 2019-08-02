@@ -11,11 +11,14 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      
     }
   },
   components: {
     Board
+  },
+  created() {
+    this.$store.dispatch('initBoard');
   }
 }
 </script>
