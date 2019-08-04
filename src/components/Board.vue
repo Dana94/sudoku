@@ -1,22 +1,30 @@
 <template>
-    <grid></grid>
+  <div id="board">
+    <square v-for="(square, x) in board" :key="x" :square="square"></square>
+  </div>
 </template>
 
 <script>
-import Grid from './Grid.vue';
+import Square from "./Square.vue";
 
 export default {
-  data () {
-    return {
-
+  computed: {
+    board() {
+      return this.$store.getters.createBoard;
     }
   },
   components: {
-    Grid
+    Square
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-
+#board {
+  display: grid;
+  grid-template: 200px 200px 200px / 200px 200px 200px;
+  & > div {
+    border: 5px solid;
+  }
+}
 </style>

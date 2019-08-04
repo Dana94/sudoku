@@ -14,5 +14,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 </style>
