@@ -1,6 +1,6 @@
 <template>
-  <div id="board">
-    <row v-for="(row, x) in board" :key="x" :row="row"></row>
+  <div class="square">
+    <row v-for="(row, x) in square" :key="x" :row="row"></row>
   </div>
 </template>
 
@@ -8,11 +8,7 @@
 import Row from "./Row.vue";
 
 export default {
-  computed: {
-    board() {
-      return this.$store.getters.createBoard;
-    }
-  },
+  props: ['square'],
   components: {
     Row
   }
@@ -28,4 +24,3 @@ export default {
   }
 }
 </style>
-

@@ -1,6 +1,7 @@
 <template>
   <div class="row">
-    <column v-for="(col, y) in row" :key="y" :col="col"></column>
+    row
+    <!-- <column v-for="(col, y) in row" :key="y" :col="col"></column> -->
   </div>
 </template>
 
