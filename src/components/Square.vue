@@ -16,11 +16,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#board {
+.square {
   display: grid;
-  grid-template: 200px 200px 200px / 200px 200px 200px;
-  & > div {
-    border: 5px solid;
-  }
+  grid-template-rows: 1fr 1fr 1fr;
 }
 </style>

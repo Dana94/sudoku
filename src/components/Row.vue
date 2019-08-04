@@ -1,7 +1,6 @@
 <template>
   <div class="row">
-    row
-    <!-- <column v-for="(col, y) in row" :key="y" :col="col"></column> -->
+    <column v-for="(col, y) in row" :key="y" :col="col"></column>
   </div>
 </template>
 
@@ -15,5 +14,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 </style>

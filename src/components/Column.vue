@@ -4,11 +4,15 @@
 
 <script>
 export default {
-  props: ['col']
-
-}
+  props: ["col"]
+};
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: .5px solid;
+}
 </style>
